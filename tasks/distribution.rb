@@ -10,10 +10,7 @@ Jeweler::Tasks.new do |gem|
   gem.email       = 'pat@freelancing-gods.com'
   gem.homepage    = 'http://github.com/freelancing-god/inkan'
   gem.authors     = ["Pat Allan"]
-  
-  gem.add_development_dependency 'rspec', '>= 1.3.0'
-  gem.add_development_dependency 'yard',  '>= 0'
-  
+    
   gem.files = FileList[
     'lib/**/*.rb',
     'LICENCE',
