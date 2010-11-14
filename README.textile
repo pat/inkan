@@ -6,6 +6,8 @@ This is particularly useful for generating configuration files and then wanting 
 
 All it actually does is generate a SHA hash of the file's contents, and adds it as a comment at the top of the file. If the file's contents are changed, the SHA won't match, and then you can decide whether you want to overwrite the file.
 
+The name *inkan* comes from "the Japanese word for a document seal":http://en.wikipedia.org/wiki/Inkan#Japanese_usage.
+
 h2. Installing
 
 <pre><code>gem install inkan</code></pre>
