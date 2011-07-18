@@ -97,15 +97,15 @@ describe "Inkan" do
     end
   end
   
-  describe '#comment' do
+  describe '#comment_prefix' do
     let(:inkan) { Inkan.new('/tmp/spec.txt') }
     
     it "defaults to a hash symbol" do
-      inkan.comment.should == '#'
+      inkan.comment_prefix.should == '#'
     end
     
     it "should pass through changes to the file credit" do
-      inkan.comment = "//"
+      inkan.comment_prefix = "//"
       inkan.print "foo bar baz"
       inkan.seal
       
