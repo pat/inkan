@@ -12,4 +12,4 @@ RSpec::Core::RakeTask.new(:rcov) do |spec|
     '--exclude', 'gems',
     '--exclude', 'ruby'
   ]
-end
+end if defined?(Rcov)
