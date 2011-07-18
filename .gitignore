@@ -21,5 +21,4 @@ pkg
 
 ## PROJECT::SPECIFIC
 .bundle
-Gemfile.lock
 *.gemspec
