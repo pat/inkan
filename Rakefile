@@ -1,11 +1,14 @@
-require 'rubygems'
-require 'rake'
-require 'bundler'
+# frozen_string_literal: true
 
-Bundler.require :default, :development
+require "bundler/gem_tasks"
 
-require 'tasks/distribution'
-require 'tasks/testing'
+require "yard"
+require "rspec/core/rake_task"
 
-task :default => :test
-task :test    => :spec
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = "spec/**/*_spec.rb"
+end
+
+YARD::Rake::YardocTask.new
+
+task :default => :spec
