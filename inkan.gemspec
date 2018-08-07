@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "yard",  "~> 0.9"
-  spec.add_development_dependency "rspec", "2.6.0"
+  spec.add_development_dependency "rspec", "~> 3.8"
 end
